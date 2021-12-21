@@ -11,5 +11,6 @@
     <color name="songPanelStroke">#0A554E</color>
     <color name="songListBg">#B7DAD7</color>
     <color name="songPageBg">#C6FFFA</color>
+    <color name="lightGreen">#397A74</color>
 
 </resources>

@@ -87,7 +87,7 @@ public class PlayerActivity extends AppCompatActivity {
         position = bundle.getInt("pos", 0);
         txtsname.setSelected(true);
         Uri uri = Uri.parse(mySongs.get(position).toString());
-        sname = mySongs.get(position).getName();
+        sname = mySongs.get(position).getName().toString().replace(".mp3", "").replace(".wav", "");
         txtsname.setText(sname);
 
         mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
@@ -110,8 +110,8 @@ public class PlayerActivity extends AppCompatActivity {
         };
         seekmusic.setMax(mediaPlayer.getDuration());
         updateseekbar.start();
-        seekmusic.getProgressDrawable().setColorFilter(getResources().getColor(R.color.design_default_color_primary), PorterDuff.Mode.MULTIPLY);
-        seekmusic.getThumb().setColorFilter(getResources().getColor(R.color.design_default_color_primary), PorterDuff.Mode.SRC_IN);
+        seekmusic.getProgressDrawable().setColorFilter(getResources().getColor(R.color.songPanelStroke), PorterDuff.Mode.MULTIPLY);
+        seekmusic.getThumb().setColorFilter(getResources().getColor(R.color.lightGreen), PorterDuff.Mode.SRC_IN);
 
         seekmusic.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
