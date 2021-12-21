@@ -7,6 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="songPanelBg">#9b84d1</color>
-    <color name="songPanelStroke">#eeedf0</color>
+    <color name="songPanelBg">#52FAEA</color>
+    <color name="songPanelStroke">#0A554E</color>
+    <color name="songListBg">#B7DAD7</color>
+    <color name="songPageBg">#C6FFFA</color>
+
 </resources>
